@@ -561,6 +561,10 @@ body.light-mode .btn:hover {
     margin: 20px 10px;
     gap: 25px;
   }
+  .header-img img {
+    margin-top: 30px;
+    width: 350px;
+  }
 }
 
 /* For screen width 600px and below - container padding */
@@ -643,6 +647,9 @@ nav img {
 
 /* For screens 500px and below - stack tab buttons vertically */
 @media (max-width: 500px) {
+  .header-text h1{
+    font-size: 27px;
+  }
   .projects-list div h2{
     font-size: 20px;
   }
@@ -723,4 +730,9 @@ nav img {
     flex-wrap: wrap;
     gap: 10px;
   }
+}
+#msg{
+  color: #61b752;
+  margin-top: -10px;
+  display: block;
 }
