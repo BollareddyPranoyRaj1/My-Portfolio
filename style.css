@@ -481,6 +481,9 @@ body.light-mode .btn:hover {
 
 /* For screen width 800px and below */
 @media only screen and (max-width: 800px) {
+  .about-col-1 img{
+    display: none;
+  }
   nav .fa-solid {
     display: block;
     font-size: 24px;
@@ -548,6 +551,12 @@ body.light-mode .btn:hover {
 
 /* For screen width 650px and below - projects grid adjustments */
 @media only screen and (max-width: 650px) {
+   .header-text p {
+   font-size: 20px;
+  }
+  .header-text h1{
+    font-size: 30px;
+  }
   .projects-list {
     margin: 20px 10px;
     gap: 25px;
@@ -563,6 +572,12 @@ body.light-mode .btn:hover {
 
 /* For screen width 480px and below - tabs and form input scaling */
 @media only screen and (max-width: 480px) {
+   .header-text p {
+   font-size: 20px;
+  }
+  .header-text h1{
+    font-size: 25px;
+  }
   .tab-titles {
     flex-direction: column;
     gap: 12px;
@@ -596,4 +611,116 @@ body.light-mode .btn:hover {
 nav img {
   max-width: 120px;
   height: auto;
+}
+/* For screens 900px and below - remove image and center content */
+@media (max-width: 900px) {
+
+  .header-text{
+    margin-top: 60px;
+  }
+  .header-img{
+    width: 100%;
+  }
+  .about-col-1 {
+    display: none;        /* hide image */
+  }
+
+  .about-col-2 {
+    flex-basis: 100%;     /* text takes full width */
+    text-align: center;   /* center all text */
+  }
+
+  .tab-titles {
+    justify-content: center; /* center the tab buttons */
+    margin: 20px 0 30px;
+    flex-wrap: wrap;         /* allow wrapping if really small */
+  }
+
+  .tab-contents {
+    text-align: center;      /* center content inside tabs */
+  }
+}
+
+/* For screens 500px and below - stack tab buttons vertically */
+@media (max-width: 500px) {
+  .projects-list div h2{
+    font-size: 20px;
+  }
+  .tab-titles {
+    flex-direction: row;  /* stack tabs */
+    gap: 12px;               /* spacing between tabs */
+    align-items: center;     /* center tabs */
+  }
+}
+
+/* --------- CONTACT SECTION RESPONSIVE --------- */
+
+/* ≤900px: adjust contact columns */
+@media (max-width: 900px) {
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;      /* full width for both columns */
+    text-align: center;    /* center text inside */
+    margin-bottom: 20px;   /* spacing between columns */
+  }
+
+  .contact-left p {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .contact-left p i {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+
+  .social-icons a {
+    margin-right: 12px;
+  }
+
+  /* Form adjustments */
+  .contact-right form {
+    display: flex;
+    flex-direction: column;   /* stack fields vertically */
+    align-items: center;      /* center horizontally */
+    gap: 12px;                /* spacing between inputs and button */
+  }
+
+  .contact-right form input,
+  .contact-right form textarea {
+    width: 100%;             /* full width of container */
+    max-width: 400px;        /* optional max width */
+    margin: 0;               /* remove side margins */
+    box-sizing: border-box;  /* include padding in width */
+  }
+
+  .contact-right form .btn {
+    width: auto;             /* natural button width */
+    padding: 12px 28px;      /* keep consistent padding */
+    margin: 0 auto;          /* center button */
+  }
+}
+
+/* ≤600px: further adjustments for very small screens */
+@media (max-width: 600px) {
+  #contact .container {
+    padding: 0 5%;           /* smaller padding */
+  }
+
+  .contact-right form input,
+  .contact-right form textarea {
+    width: 100%;             /* full width */
+  }
+
+  .contact-right form .btn {
+    width: auto;             /* keep natural width */
+    margin: 0 auto;          /* center button */
+  }
+
+  .social-icons {
+    justify-content: center; /* center social icons */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
