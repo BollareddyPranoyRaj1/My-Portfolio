@@ -735,4 +735,14 @@ nav img {
   color: #61b752;
   margin-top: -10px;
   display: block;
+}html, body {
+  height: 100%;
+  margin: 0;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
 }
