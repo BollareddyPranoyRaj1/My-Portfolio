@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 <body>
-
   <!-- Header -->
   <div id="header">
     <div class="container">
@@ -24,13 +23,11 @@
         </ul>
         <i class="fa-solid fa-bars"></i>
         <div id="mode-switcher">
-  <button onclick="setMode('dark-mode')" class="mode-btn">Dark</button>
-  <button onclick="setMode('light-mode')" class="mode-btn">Light</button>
-</div>
-
+          <button onclick="setMode('dark-mode')" class="mode-btn">Dark</button>
+          <button onclick="setMode('light-mode')" class="mode-btn">Light</button>
+        </div>
       </nav>
     </div>
-
     <!-- Flexbox wrapper -->
     <div class="header-content">
       <div class="header-text">
@@ -39,18 +36,15 @@
       </div>
       <div class="header-img">
         <img src="https://raw.githubusercontent.com/BollareddyPranoyRaj1/My-Portfolio/main/header_img.png" alt="Header Image">
-
       </div>
     </div>
   </div>
-
   <!-- About Section -->
   <div id="about">
     <div class="container">
       <div class="row">
         <div class="about-col-1">
          <img src="https://raw.githubusercontent.com/BollareddyPranoyRaj1/My-Portfolio/main/IMG_3032.JPG" alt="My Image" />
-
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
@@ -60,7 +54,6 @@
             My experience includes working extensively with React Native and Java to deliver efficient and scalable solutions. 
             I am continuously learning and evolving my skills to create impactful and user-friendly software.
           </p>
-
           <!-- Tabs -->
           <div class="tab-titles">   
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -77,7 +70,6 @@
               <li><span>Operating Systems</span><br/>Windows, Linux</li>
             </ul>
           </div>
-
           <!-- Experience -->
           <div class="tab-contents" id="experience">
             <ul>
@@ -85,7 +77,6 @@
               <li><span>Technologies used:</span><br/>C, Java, Python, HTML, CSS, Algorithms and Data Structures</li>
             </ul>
           </div>
-
           <!-- Education -->
           <div class="tab-contents" id="education">
             <ul>
@@ -98,13 +89,11 @@
       </div>
     </div>
   </div>
-
   <!-- Projects Section -->
   <div id="projects">
     <div class="container">
       <h1 class="sub-title">My Projects</h1>
       <div class="projects-list">
-
         <div>
           <h2>SpeedTypingCalculator</h2>
           <p>
@@ -114,7 +103,6 @@
           </p>
           <a href="https://bollareddypranoyraj1.github.io/Typing-Speed-Calculator/">Learn More</a>
         </div>
-
         <div>
           <h2>LearnSphere</h2>
           <p>
@@ -123,7 +111,6 @@
           </p>
           <a href="#">Learn more</a>
         </div>
-
         <div>
           <h2>UI/UX Timer</h2>
           <p>
@@ -133,11 +120,9 @@
           </p>
           <a href="https://bollareddypranoyraj1.github.io/countdown-timer/">Learn more</a>
         </div>
-
       </div>
     </div>
   </div>
-
   <!-- Contact Section -->
   <div id="contact">
   <div class="container">
@@ -147,27 +132,22 @@
         <p><i class="fa-solid fa-paper-plane"></i> bollareddypranoyraj@gmail.com</p>
         <p><i class="fa-solid fa-phone"></i> 939264522</p>
         <div class="social-icons">
-          <div class="social-icons">
-  <a href="https://github.com/BollareddyPranoyRaj1" target="_blank">
-    <i class="fa-brands fa-github"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/pranoy-raj-bollareddy-8b62b6279" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-  <a href="https://www.instagram.com/bollareddy_pranoy_raj/" target="_blank">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
-  <a href="https://wa.me/91939264522" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-</div>
-
-
+          <a href="https://github.com/BollareddyPranoyRaj1" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/pranoy-raj-bollareddy-8b62b6279" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/bollareddy_pranoy_raj/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/91939264522" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
-<a href="https://raw.githubusercontent.com/BollareddyPranoyRaj1/My-Portfolio/main/Bollareddy_Resume.pdf" 
-   download class="btn" style="margin-top: 20px;">Download CV</a>
+        <a href="https://raw.githubusercontent.com/BollareddyPranoyRaj1/My-Portfolio/main/Bollareddy_Resume.pdf" 
+          download class="btn" style="margin-top: 20px;">Download CV</a>
       </div>
-
       <div class="contact-right">
         <form action="" name="submit-to-google-sheet">
           <input type="text" name="name" placeholder="Your Name" required />
@@ -179,155 +159,11 @@
       </div>
     </div>
   </div>
-
-
     <div class="copyright">
       <p>&copy; 2025 Bollareddy Pranoy Raj. All Rights Reserved.</p>
     </div>
   </div>
-
   <!-- JavaScript -->
-  <script>
-    // Tabs
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-      for(let tablink of tablinks){
-        tablink.classList.remove("active-link");
-      }
-      for(let tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-  </script>
-
-  <script>
-    // Typing Effect
-    const text = "FULL STACK DEVELOPER";
-    let i = 0;
-    function typing() {
-      if (i < text.length) {
-        document.querySelector(".header-text p").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typing, 100);
-      }
-    }
-    document.querySelector(".header-text p").innerHTML = "";
-    typing();
-
-    // Scroll Animation
-    const reveals = document.querySelectorAll(".row, .projects-list div, .contact-left, .contact-right");
-    window.addEventListener("scroll", () => {
-      reveals.forEach((el) => {
-        const windowHeight = window.innerHeight;
-        const elementTop = el.getBoundingClientRect().top;
-        if (elementTop < windowHeight - 50) {
-          el.style.opacity = "1";
-          el.style.transform = "translateY(0)";
-          el.style.transition = "all 1s ease";
-        }
-      });
-    });
-
-    // Mobile Menu Toggle
-    const menuBtn = document.querySelector("nav .fa-bars");
-    const closeBtn = document.querySelector("nav .fa-times");
-    const navMenu = document.querySelector("nav ul");
-
-    menuBtn.addEventListener("click", () => {
-      navMenu.classList.add("active");
-    });
-    closeBtn.addEventListener("click", () => {
-      navMenu.classList.remove("active");
-    });
-  </script>
-
-  <script>
-    // Interstellar Scroll Animation
-    document.addEventListener('DOMContentLoaded', function() {
-      const elems = document.querySelectorAll('.stlr');
-      if (elems.length === 0) return;
-
-      if (!('IntersectionObserver' in window)) {
-        elems.forEach(e => e.classList.add('stlr-in'));
-        const children = document.querySelectorAll('[data-stlr-child]');
-        children.forEach(c => c.classList.add('stlr-in'));
-        return;
-      }
-
-      const io = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          const el = entry.target;
-          const baseDelay = parseFloat(el.dataset.stlrDelay) || 0;
-
-          const childNodes = el.querySelectorAll('[data-stlr-child]');
-          if (childNodes.length) {
-            childNodes.forEach((child, i) => {
-              const childDelay = parseFloat(child.dataset.stlrDelay) || (baseDelay + i * 0.12);
-              child.style.transitionDelay = childDelay + 's';
-              requestAnimationFrame(() => child.classList.add('stlr-in'));
-            });
-          } else {
-            el.style.transitionDelay = baseDelay + 's';
-            requestAnimationFrame(() => el.classList.add('stlr-in'));
-          }
-          obs.unobserve(el);
-        });
-      }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -12% 0px'
-      });
-
-      elems.forEach(e => io.observe(e));
-    });
-  </script>
-  <script>
-  function setMode(mode) {
-    document.body.classList.remove('dark-mode', 'light-mode');
-    if (mode === 'light-mode') {
-      document.body.classList.add('light-mode');
-    }
-    // Highlight active button
-    document.querySelectorAll('.mode-btn').forEach(btn => {
-      btn.classList.remove('active');
-      if (btn.textContent.toLowerCase() === mode.replace('-mode','')) {
-        btn.classList.add('active');
-      }
-    });
-  }
-  // Default mode: dark
-  setMode('dark-mode');
-</script>
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzx5etObqtTrdJxvzz6lWzt8lAaLTlhG9ItEeDKf6JyRJDLJbhfSmVlVZBPc08mvt9Y/exec';
-  const form = document.forms['submit-to-google-sheet'];
-  const msg = document.getElementById("msg");
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent successfully";  // fixed spelling
-        msg.style.display = "block";                 // ensure it’s visible
-        msg.style.color = "green";                   // make it noticeable
-        setTimeout(function(){  
-          msg.innerHTML = " ";
-        }, 5000);
-        form.reset();
-      })
-      .catch(error => {
-        console.error('Error!', error.message);
-        msg.innerHTML = "Error sending message!";
-        msg.style.display = "block";
-        msg.style.color = "red";
-      });
-  });
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
